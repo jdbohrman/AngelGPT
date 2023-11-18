@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const { OpenAIAPI } = require('openai');
 
 const client = new Discord.Client();
-const openai = new OpenAIAPI('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'); // Replace with your OpenAI API key
-const token = 'MTE3NTM1MzExNjExMjE5MTU1OQ.GqAE_m.JI_q35x7wCmPco28g0h7wUaxMs2sDtqqqqiTuc'; // Replace with your Discord bot token
-const requiredRole = '1165340571737530390'; // Replace with the ID of the role you want to assign
+const openai = new OpenAIAPI(process.env.OPENAI_API_KEY);
+const token = process.env.DISCORD_TOKEN;
+const requiredRole = process.env.REQUIRED_ROLE_ID;
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
