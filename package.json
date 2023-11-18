@@ -1,0 +1,15 @@
+{
+  "name": "angelgpt",
+  "version": "1.0.0",
+  "description": "A shitty GPT Discord bot for my friends Discord server because onboarding became a PITA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
